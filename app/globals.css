@@ -1,0 +1,166 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #f8f9ff 0%, #eef4ff 100%);
+  color: #0f172a;
+}
+
+.page {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+.hero {
+  background: #101b42;
+  color: #fff;
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+.badge {
+  width: fit-content;
+  margin: 0;
+  background: #3b82f6;
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+.hero h1 {
+  margin-bottom: 0.4rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-actions a,
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-actions a {
+  background: #22c55e;
+  color: #03250f;
+}
+
+.hero-actions .secondary {
+  background: #fff;
+  color: #101b42;
+}
+
+.section {
+  margin-top: 2.4rem;
+}
+
+.section h2 {
+  margin-bottom: 0.3rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.content span {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.content p {
+  margin: 0;
+  color: #334155;
+}
+
+.content button,
+.ticket-form button,
+.plan-card button {
+  width: 100%;
+  background: #0f172a;
+  color: #fff;
+}
+
+.ticket-box,
+.livestream {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.2rem;
+}
+
+.ticket-form {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-top: 1rem;
+}
+
+.ticket-form label {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.92rem;
+}
+
+.ticket-form input,
+.ticket-form select {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0.7rem;
+  font: inherit;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.plan-card {
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0.2rem 0;
+}
